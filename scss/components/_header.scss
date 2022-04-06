@@ -1,0 +1,71 @@
+.header {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+
+   @media (min-width: $breakpoint) {
+      height: 100px;
+      padding: 0 20px;
+      border-bottom: 1px solid rgba($grayish-blue, 0.4);
+   }
+}
+
+.header_logo {
+   margin-left: 10px;
+   margin-bottom: 5px;
+
+   @media (min-width: $breakpoint) {
+      margin-left: 0;
+   }
+}
+
+.header_user {
+   @include grid();
+   margin-left: auto;
+}
+
+.header_account,
+.header_cart {
+   @include flex();
+}
+
+.header_cart-img {
+   @media (min-width: $breakpoint) {
+      padding: 10px 0;
+      transition: filter 100ms;
+      cursor: pointer;
+
+      &:hover {
+         filter: brightness(0);
+      }
+   }
+}
+
+.header_account {
+   @media (min-width: $breakpoint) {
+      margin-left: 20px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      transition: border 100ms;
+      cursor: pointer;
+
+      &:hover {
+         border-color: $orange;
+      }
+   }
+}
+
+.header_icon {
+   @media (min-width: $breakpoint) {
+      visibility: hidden;
+   }
+}
+
+.header_account-img {
+   width: 25px;
+
+   @media (min-width: $breakpoint) {
+      width: 45px;
+   }
+}

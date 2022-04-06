@@ -1,0 +1,28 @@
+.btn {
+   @include flex();
+   width: 100%;
+   margin: 15px 0;
+   padding: 18px;
+   background: $orange;
+   color: white;
+   font-family: inherit;
+   font-weight: bold;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 20px 20px -10px rgba($orange, 0.3);
+
+   @media (min-width: $breakpoint) {
+      height: 54px;
+      transition: background 100ms;
+      cursor: pointer;
+
+      &:hover {
+         background: lighten($orange, 20%);
+      }
+   }
+}
+
+.btn_icon {
+   width: 16px;
+   margin-right: 10px;
+}

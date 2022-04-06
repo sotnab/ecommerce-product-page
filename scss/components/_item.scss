@@ -1,0 +1,133 @@
+.item {
+   @media (min-width: $breakpoint) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      padding: 80px 60px;
+   }
+}
+
+.item_desc {
+   padding: 20px;
+
+   @media (min-width: $breakpoint) {
+      padding: 40px 20px;
+   }
+}
+
+.item_company {
+   font-size: 0.75rem;
+   color: $orange;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.item_name {
+   margin: 10px 0;
+   font-size: 1.65rem;
+   line-height: 1.1;
+
+   @media (min-width: $breakpoint) {
+      margin: 16px 0;
+      font-size: 2.4rem;
+   }
+}
+
+.item_info {
+   padding: 10px 0;
+   font-size: 0.9rem;
+   line-height: 1.5;
+   color: $dark-grayish-blue;
+
+   @media (min-width: $breakpoint) {
+      line-height: 1.8;
+   }
+}
+
+.item_price {
+   @include grid();
+   justify-content: space-between;
+   gap: 0px;
+   padding: 10px 0;
+
+   @media (min-width: $breakpoint) {
+      grid-auto-flow: row;
+      row-gap: 10px;
+   }
+}
+
+.item_actual-price {
+   @include grid();
+}
+
+.item_new-price {
+   font-weight: bold;
+   font-size: 1.55rem;
+
+   @media (min-width: $breakpoint) {
+      font-size: 1.8rem;
+   }
+}
+
+.item_discount {
+   padding: 3px 6px;
+   background: $pale-orange;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: 0.9rem;
+   color: $orange;
+
+   @media (min-width: $breakpoint) {
+      font-size: 1rem;
+   }
+}
+
+.item_old-price {
+   font-weight: bold;
+   font-size: 0.9rem;
+   text-decoration: line-through;
+   color: $grayish-blue;
+}
+
+.item_buy {
+   @include grid();
+   grid-auto-flow: row;
+   gap: 0;
+
+   @media (min-width: $breakpoint) {
+      grid-template-columns: 2fr 3fr;
+      gap: 20px;
+   }
+}
+
+.item_pcs {
+   @include grid();
+   grid-template-columns: auto 1fr auto;
+   background: $light-grayish-blue;
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 10px;
+
+   @media (min-width: $breakpoint) {
+      height: 54px;
+   }
+}
+
+.item_char {
+   padding: 8px;
+   transition: filter 100ms;
+   cursor: pointer;
+
+   @media (min-width: $breakpoint) {
+      &:hover {
+         filter: brightness(150%);
+      }
+   }
+}
+
+.item_pcs-count {
+   text-align: center;
+   font-weight: bold;
+   font-size: 0.9rem;
+}
