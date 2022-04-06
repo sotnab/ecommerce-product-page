@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,7 +17,10 @@
    <div class="container">
       <header class="header wrapper">
          <img src="./images/icon-menu.svg" alt="open menu" class="header_icon" id="open-menu">
-         <img src="./images/logo.svg" alt="logo" class="header_logo">
+
+         <h1 class="header_title">
+            <img src="./images/logo.svg" alt="logo" class="header_logo">
+         </h1>
 
          <nav class="menu" id="menu">
             <ul class="menu_list">
@@ -49,7 +53,7 @@
       </header>
 
       <main class="item wrapper">
-         <div class="slider">
+         <div class="slider" role="slider">
             <div class="slider_main">
                <img src="./images/image-product-1.jpg" alt="Product Image" class="slider_main-img" id="item-main-img">
             </div>
@@ -94,9 +98,9 @@
 
             <div class="item_buy">
                <div class="item_pcs">
-                  <img src="./images/icon-minus.svg" class="item_char" id="minus">
+                  <img src="./images/icon-minus.svg" class="item_char" alt="Minus icon" id="minus">
                   <div class="item_pcs-count" id="counter">0</div>
-                  <img src="./images/icon-plus.svg" class="item_char" id="plus">
+                  <img src="./images/icon-plus.svg" class="item_char" alt="Plus icon" id="plus">
                </div>
                <button class="btn" id="add-to-cart">
                   <img src="./images/icon-cart-light.svg" alt="cart" class="btn_icon">
@@ -109,7 +113,7 @@
 
 
    <div class="lightbox" id="lightbox">
-      <div class="slider slider--lightbox">
+      <div class="slider slider--lightbox" role="slider">
          <div class="slider_main">
             <img src="./images/icon-close.svg" alt="Close icon" class="slider_close" id="close-lightbox">
 
