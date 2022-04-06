@@ -1,8 +1,10 @@
-import Menu from './Menu.js'
-import Cart from './Cart.js'
-import ResponsiveSlider from './ResponsiveSlider.js'
-import LightboxSlider from './LightboxSlider.js'
-import Counter from './Counter.js'
+import Menu from './js/Menu.js'
+import Cart from './js/Cart.js'
+import ResponsiveSlider from './js/ResponsiveSlider.js'
+import LightboxSlider from './js/LightboxSlider.js'
+import Counter from './js/Counter.js'
+
+import './scss/style.scss'
 
 const cartItem = {
    id: '92n820r62b23br',
